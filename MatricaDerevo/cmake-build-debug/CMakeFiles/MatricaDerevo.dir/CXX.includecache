@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Programms/Clion/MatricaDerevo/main.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+ctime
+-
+set
+-
+
