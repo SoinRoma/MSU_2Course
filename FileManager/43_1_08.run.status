@@ -1,0 +1,80 @@
+
+Self test
+
+Common test
+Common file manager test 1
+command: fm.create(1000); expected: 1, passed
+command: fm.create_file("test_file",1000+1); expected: 0, passed
+command: fm.destroy(); expected: 1, passed
+command: fm.destroy(); expected: 0, passed
+command: fm.create(1000); expected: 1, passed
+command: fm.create(1000); expected: 0, passed
+command: fm.destroy(); expected: 1, passed
+Test 1 passed
+Common file manager test 2
+command: fm.create(1000); expected: 1, passed
+command: fm.create_file("file1.txt",1000); expected: 1, passed
+command: fm.create_file("file2.txt",1); expected: 0, passed
+command: fm.remove("file1.txt",0); expected: 1, passed
+command: fm.remove("file1.txt",0); expected: 0, passed
+command: fm.create_file("file2.txt",1000/2); expected: 1, passed
+command: fm.create_file("file2.txt",1000/2); expected: 0, passed
+command: fm.create_file("file3.txt",1000/2); expected: 1, passed
+command: fm.create_dir("test_dir"); expected: 1, passed
+command: fm.remove("file2.txt",0); expected: 1, passed
+command: fm.destroy(); expected: 1, passed
+Test 2 passed
+Common file manager test 3
+command: fm.create(1000); expected: 1, passed
+command: fm.create_dir("dir1"); expected: 1, passed
+command: fm.create_dir("dir1/dir11"); expected: 1, passed
+command: fm.change_dir("dir1"); expected: 1, passed
+command: fm.create_dir("../dir2"); expected: 1, passed
+command: fm.create_dir("../dir2/dir3"); expected: 1, passed
+command: fm.remove("/dir2/dir3", 0); expected: 1, passed
+command: fm.create_dir("/dir3/dir31"); expected: 0, passed
+command: fm.create_dir("../dir3/dir31"); expected: 0, passed
+command: fm.create_dir("../dir2"); expected: 0, passed
+command: fm.create_file("/dir2/file1", 1); expected: 1, passed
+command: fm.create_dir("/dir2/dir21"); expected: 1, passed
+command: fm.create_dir("/dir2/file1"); expected: 0, failed
+Test 3 failed
+
+Common test
+Common file manager test 1
+command: fm.create(1000); expected: 1, passed
+command: fm.create_file("test_file",1000+1); expected: 0, passed
+command: fm.destroy(); expected: 1, passed
+command: fm.destroy(); expected: 0, passed
+command: fm.create(1000); expected: 1, passed
+command: fm.create(1000); expected: 0, passed
+command: fm.destroy(); expected: 1, passed
+Test 1 passed
+Common file manager test 2
+command: fm.create(1000); expected: 1, passed
+command: fm.create_file("file1.txt",1000); expected: 1, passed
+command: fm.create_file("file2.txt",1); expected: 0, passed
+command: fm.remove("file1.txt",0); expected: 1, passed
+command: fm.remove("file1.txt",0); expected: 0, passed
+command: fm.create_file("file2.txt",1000/2); expected: 1, passed
+command: fm.create_file("file2.txt",1000/2); expected: 0, passed
+command: fm.create_file("file3.txt",1000/2); expected: 1, passed
+command: fm.create_dir("test_dir"); expected: 1, passed
+command: fm.remove("file2.txt",0); expected: 1, passed
+command: fm.destroy(); expected: 1, passed
+Test 2 passed
+Common file manager test 3
+command: fm.create(1000); expected: 1, passed
+command: fm.create_dir("dir1"); expected: 1, passed
+command: fm.create_dir("dir1/dir11"); expected: 1, passed
+command: fm.change_dir("dir1"); expected: 1, passed
+command: fm.create_dir("../dir2"); expected: 1, passed
+command: fm.create_dir("../dir2/dir3"); expected: 1, passed
+command: fm.remove("/dir2/dir3", 0); expected: 1, passed
+command: fm.create_dir("/dir3/dir31"); expected: 0, passed
+command: fm.create_dir("../dir3/dir31"); expected: 0, passed
+command: fm.create_dir("../dir2"); expected: 0, passed
+command: fm.create_file("/dir2/file1", 1); expected: 1, passed
+command: fm.create_dir("/dir2/dir21"); expected: 1, passed
+command: fm.create_dir("/dir2/file1"); expected: 0, failed
+Test 3 failed
