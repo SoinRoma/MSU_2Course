@@ -1,3 +1,0 @@
-E:/Programms/Clion/MatricaDerevo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-E:/Programms/Clion/MatricaDerevo/cmake-build-debug/CMakeFiles/MatricaDerevo.dir
-E:/Programms/Clion/MatricaDerevo/cmake-build-debug/CMakeFiles/edit_cache.dir
