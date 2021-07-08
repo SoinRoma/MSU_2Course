@@ -1,3 +1,0 @@
-D:/Programms/Clion/Graf2/cmake-build-debug/CMakeFiles/Graf2.dir
-D:/Programms/Clion/Graf2/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Programms/Clion/Graf2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
