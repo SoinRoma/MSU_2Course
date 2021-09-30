@@ -7,5 +7,5 @@
 
 ## Используемые технологии
 ![C++](https://img.shields.io/badge/-C++-black?style=flat-square&logo=c++5&logoColor=c++)
-![C](https://img.shields.io/badge/-C-black?style=flat-square&logo=c)
+![C](https://img.shields.io/badge/-C-black?style=flat-square&logo=c5&logoColor=c)
 
